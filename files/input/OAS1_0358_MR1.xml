@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fs:ASEGRegionAnalysis ID="OAS1_0358_MR1_ASEG" project="CENTRAL_OASIS_CS" label="OAS1_0358_MR1_ASEG" xmlns:prov="http://www.nbirn.net/prov" xmlns:nunda="http://nrg.wustl.edu/nunda" xmlns:xnat="http://nrg.wustl.edu/xnat" xmlns:fs="http://nrg.wustl.edu/fs" xmlns:cat="http://nrg.wustl.edu/catalog" xmlns:uds="http://nrg.wustl.edu/uds" xmlns:wrk="http://nrg.wustl.edu/workflow" xmlns:genetics="http://nrg.wustl.edu/genetics" xmlns:arc="http://nrg.wustl.edu/arc" xmlns:pup="http://nrg.wustl.edu/pup" xmlns:adrc="http://nrg.wustl.edu/adrc" xmlns:xnat_a="http://nrg.wustl.edu/xnat_assessments" xmlns:neurocog="http://nrg.wustl.edu/neurocog" xmlns:cnda="http://nrg.wustl.edu/cnda" xmlns:sapssans="http://nrg.wustl.edu/sapssans" xmlns:xdat="http://nrg.wustl.edu/security" xmlns:pipe="http://nrg.wustl.edu/pipe" xmlns:scr="http://nrg.wustl.edu/scr" xmlns:sf="http://nrg.wustl.edu/sf" xmlns:val="http://nrg.wustl.edu/val" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://nrg.wustl.edu/neurocog https://central.xnat.org/schemas/neurocog.xsd http://nrg.wustl.edu/nunda https://central.xnat.org/schemas/nunda.xsd http://nrg.wustl.edu/workflow https://central.xnat.org/schemas/workflow.xsd http://nrg.wustl.edu/cnda https://central.xnat.org/schemas/cnda_xnat.xsd http://nrg.wustl.edu/security https://central.xnat.org/schemas/security.xsd http://nrg.wustl.edu/arc https://central.xnat.org/schemas/project.xsd http://nrg.wustl.edu/val https://central.xnat.org/schemas/protocolValidation.xsd http://www.nbirn.net/prov https://central.xnat.org/schemas/birnprov.xsd http://nrg.wustl.edu/pipe https://central.xnat.org/schemas/repository.xsd http://nrg.wustl.edu/scr https://central.xnat.org/schemas/screeningAssessment.xsd http://nrg.wustl.edu/sapssans https://central.xnat.org/schemas/sapssans.xsd http://nrg.wustl.edu/catalog https://central.xnat.org/schemas/catalog.xsd http://nrg.wustl.edu/pup https://central.xnat.org/schemas/pup.xsd http://nrg.wustl.edu/fs https://central.xnat.org/schemas/fs.xsd http://nrg.wustl.edu/genetics https://central.xnat.org/schemas/genetics.xsd http://nrg.wustl.edu/adrc https://central.xnat.org/schemas/adrc.xsd http://nrg.wustl.edu/uds https://central.xnat.org/schemas/uds.xsd http://nrg.wustl.edu/sf https://central.xnat.org/schemas/subjforms.xsd http://nrg.wustl.edu/xnat_assessments https://central.xnat.org/schemas/assessments.xsd http://nrg.wustl.edu/xnat https://central.xnat.org/schemas/xnat.xsd">
+<xnat:provenance>
+<prov:processStep>
+<prov:program version="1.20" arguments="--seg mri/aseg_with_cc.mgz --sum stats/aseg.stats --pv mri/norm.mgz --excludeid 0 --brain-vol-from-seg --brainmask mri/brainmask.mgz --in mri/norm.mgz --in-intensity-name norm --in-intensity-units MR --etiv --subject OAS1_0358_MR1 --ctab /space/sake/19/users/freesurfer_oasis_100506/ASegStatsLUT.txt">mri_segstats</prov:program>
+<prov:timestamp>0001-01-01T00:00:00</prov:timestamp>
+<prov:cvs>$Id: mri_segstats.c,v 1.20 2006/07/31 21:56:54 greve Exp $</prov:cvs>
+<prov:user>jpacheco</prov:user>
+<prov:machine>node0418</prov:machine>
+<prov:platform>Linux</prov:platform>
+</prov:processStep>
+</xnat:provenance>
+<xnat:in>
+<xnat:file URI="arc001/OAS1_0358_MR1/ASSESSORS/FREESURFER/mri/brainmask.mgz" format="MGZ" content="brain mask" xsi:type="xnat:imageResource"/>
+<xnat:file URI="arc001/OAS1_0358_MR1/ASSESSORS/FREESURFER/mri/aseg_with_cc.mgz" format="MGZ" content="segmentation volume" xsi:type="xnat:imageResource"/>
+<xnat:file URI="arc001/OAS1_0358_MR1/ASSESSORS/FREESURFER/mri/norm.mgz" format="MGZ" content="in volume" xsi:type="xnat:imageResource"/>
+<xnat:file URI="arc001/OAS1_0358_MR1/ASSESSORS/FREESURFER/mri/norm.mgz" format="MGZ" content="in volume" xsi:type="xnat:imageResource"/>
+</xnat:in>
+<xnat:out>
+<xnat:file file_count="0" file_size="0" URI="arc001/OAS1_0358_MR1/ASSESSORS/FREESURFER/stats/aseg.stats" format="FS_STATS" content="$stats_type stats" xsi:type="xnat:resource"/>
+</xnat:out>
+<xnat:imageSession_ID>OAS1_0358_MR1</xnat:imageSession_ID>
+<fs:BrainMaskNVox>1444972.0</fs:BrainMaskNVox>
+<fs:BrainMaskVol>1444972.0</fs:BrainMaskVol>
+<fs:BrainSegNVox>1075689.0</fs:BrainSegNVox>
+<fs:BrainSegVol>1075689.0</fs:BrainSegVol>
+<fs:ICV>1347177.300354</fs:ICV>
+<fs:regions>
+<fs:region SegId="2" name="Left-Cerebral-White-Matter" hemisphere="left">
+<fs:NVoxels>202180.0</fs:NVoxels>
+<fs:Volume>202180.0</fs:Volume>
+<fs:normMean>107.1798</fs:normMean>
+<fs:normStdDev>9.871</fs:normStdDev>
+<fs:normMin>44.0</fs:normMin>
+<fs:normMax>209.0</fs:normMax>
+<fs:normRange>165.0</fs:normRange>
+</fs:region>
+<fs:region SegId="3" name="Left-Cerebral-Cortex" hemisphere="left">
+<fs:NVoxels>231716.0</fs:NVoxels>
+<fs:Volume>231716.0</fs:Volume>
+<fs:normMean>69.2887</fs:normMean>
+<fs:normStdDev>10.5529</fs:normStdDev>
+<fs:normMin>27.0</fs:normMin>
+<fs:normMax>191.0</fs:normMax>
+<fs:normRange>164.0</fs:normRange>
+</fs:region>
+<fs:region SegId="4" name="Left-Lateral-Ventricle" hemisphere="left">
+<fs:NVoxels>11290.0</fs:NVoxels>
+<fs:Volume>11290.0</fs:Volume>
+<fs:normMean>25.5009</fs:normMean>
+<fs:normStdDev>13.1663</fs:normStdDev>
+<fs:normMin>7.0</fs:normMin>
+<fs:normMax>79.0</fs:normMax>
+<fs:normRange>72.0</fs:normRange>
+</fs:region>
+<fs:region SegId="5" name="Left-Inf-Lat-Vent" hemisphere="left">
+<fs:NVoxels>1006.0</fs:NVoxels>
+<fs:Volume>1006.0</fs:Volume>
+<fs:normMean>42.6355</fs:normMean>
+<fs:normStdDev>17.2602</fs:normStdDev>
+<fs:normMin>9.0</fs:normMin>
+<fs:normMax>90.0</fs:normMax>
+<fs:normRange>81.0</fs:normRange>
+</fs:region>
+<fs:region SegId="7" name="Left-Cerebellum-White-Matter" hemisphere="left">
+<fs:NVoxels>12187.0</fs:NVoxels>
+<fs:Volume>12187.0</fs:Volume>
+<fs:normMean>89.8688</fs:normMean>
+<fs:normStdDev>7.1404</fs:normStdDev>
+<fs:normMin>39.0</fs:normMin>
+<fs:normMax>119.0</fs:normMax>
+<fs:normRange>80.0</fs:normRange>
+</fs:region>
+<fs:region SegId="8" name="Left-Cerebellum-Cortex" hemisphere="left">
+<fs:NVoxels>53100.0</fs:NVoxels>
+<fs:Volume>53100.0</fs:Volume>
+<fs:normMean>59.7104</fs:normMean>
+<fs:normStdDev>9.4391</fs:normStdDev>
+<fs:normMin>10.0</fs:normMin>
+<fs:normMax>139.0</fs:normMax>
+<fs:normRange>129.0</fs:normRange>
+</fs:region>
+<fs:region SegId="10" name="Left-Thalamus-Proper" hemisphere="left">
+<fs:NVoxels>5612.0</fs:NVoxels>
+<fs:Volume>5612.0</fs:Volume>
+<fs:normMean>88.7829</fs:normMean>
+<fs:normStdDev>10.7007</fs:normStdDev>
+<fs:normMin>40.0</fs:normMin>
+<fs:normMax>113.0</fs:normMax>
+<fs:normRange>73.0</fs:normRange>
+</fs:region>
+<fs:region SegId="11" name="Left-Caudate" hemisphere="left">
+<fs:NVoxels>3066.0</fs:NVoxels>
+<fs:Volume>3066.0</fs:Volume>
+<fs:normMean>77.0637</fs:normMean>
+<fs:normStdDev>10.8097</fs:normStdDev>
+<fs:normMin>40.0</fs:normMin>
+<fs:normMax>103.0</fs:normMax>
+<fs:normRange>63.0</fs:normRange>
+</fs:region>
+<fs:region SegId="12" name="Left-Putamen" hemisphere="left">
+<fs:NVoxels>4857.0</fs:NVoxels>
+<fs:Volume>4857.0</fs:Volume>
+<fs:normMean>83.6272</fs:normMean>
+<fs:normStdDev>7.8211</fs:normStdDev>
+<fs:normMin>54.0</fs:normMin>
+<fs:normMax>129.0</fs:normMax>
+<fs:normRange>75.0</fs:normRange>
+</fs:region>
+<fs:region SegId="13" name="Left-Pallidum" hemisphere="left">
+<fs:NVoxels>1472.0</fs:NVoxels>
+<fs:Volume>1472.0</fs:Volume>
+<fs:normMean>104.6397</fs:normMean>
+<fs:normStdDev>5.4003</fs:normStdDev>
+<fs:normMin>82.0</fs:normMin>
+<fs:normMax>123.0</fs:normMax>
+<fs:normRange>41.0</fs:normRange>
+</fs:region>
+<fs:region SegId="14" name="3rd-Ventricle">
+<fs:NVoxels>1050.0</fs:NVoxels>
+<fs:Volume>1050.0</fs:Volume>
+<fs:normMean>32.7198</fs:normMean>
+<fs:normStdDev>13.1418</fs:normStdDev>
+<fs:normMin>10.0</fs:normMin>
+<fs:normMax>65.0</fs:normMax>
+<fs:normRange>55.0</fs:normRange>
+</fs:region>
+<fs:region SegId="15" name="4th-Ventricle">
+<fs:NVoxels>1710.0</fs:NVoxels>
+<fs:Volume>1710.0</fs:Volume>
+<fs:normMean>27.9953</fs:normMean>
+<fs:normStdDev>10.6492</fs:normStdDev>
+<fs:normMin>7.0</fs:normMin>
+<fs:normMax>72.0</fs:normMax>
+<fs:normRange>65.0</fs:normRange>
+</fs:region>
+<fs:region SegId="16" name="Brain-Stem">
+<fs:NVoxels>17689.0</fs:NVoxels>
+<fs:Volume>17689.0</fs:Volume>
+<fs:normMean>87.3782</fs:normMean>
+<fs:normStdDev>10.5317</fs:normStdDev>
+<fs:normMin>35.0</fs:normMin>
+<fs:normMax>133.0</fs:normMax>
+<fs:normRange>98.0</fs:normRange>
+</fs:region>
+<fs:region SegId="17" name="Left-Hippocampus" hemisphere="left">
+<fs:NVoxels>3428.0</fs:NVoxels>
+<fs:Volume>3428.0</fs:Volume>
+<fs:normMean>67.254</fs:normMean>
+<fs:normStdDev>9.5546</fs:normStdDev>
+<fs:normMin>32.0</fs:normMin>
+<fs:normMax>105.0</fs:normMax>
+<fs:normRange>73.0</fs:normRange>
+</fs:region>
+<fs:region SegId="18" name="Left-Amygdala" hemisphere="left">
+<fs:NVoxels>1323.0</fs:NVoxels>
+<fs:Volume>1323.0</fs:Volume>
+<fs:normMean>65.3043</fs:normMean>
+<fs:normStdDev>7.2818</fs:normStdDev>
+<fs:normMin>31.0</fs:normMin>
+<fs:normMax>87.0</fs:normMax>
+<fs:normRange>56.0</fs:normRange>
+</fs:region>
+<fs:region SegId="24" name="CSF">
+<fs:NVoxels>1154.0</fs:NVoxels>
+<fs:Volume>1154.0</fs:Volume>
+<fs:normMean>38.9705</fs:normMean>
+<fs:normStdDev>13.7955</fs:normStdDev>
+<fs:normMin>8.0</fs:normMin>
+<fs:normMax>71.0</fs:normMax>
+<fs:normRange>63.0</fs:normRange>
+</fs:region>
+<fs:region SegId="26" name="Left-Accumbens-area" hemisphere="left">
+<fs:NVoxels>615.0</fs:NVoxels>
+<fs:Volume>615.0</fs:Volume>
+<fs:normMean>72.1221</fs:normMean>
+<fs:normStdDev>6.6666</fs:normStdDev>
+<fs:normMin>41.0</fs:normMin>
+<fs:normMax>92.0</fs:normMax>
+<fs:normRange>51.0</fs:normRange>
+</fs:region>
+<fs:region SegId="28" name="Left-VentralDC" hemisphere="left">
+<fs:NVoxels>3564.0</fs:NVoxels>
+<fs:Volume>3564.0</fs:Volume>
+<fs:normMean>100.1064</fs:normMean>
+<fs:normStdDev>11.2337</fs:normStdDev>
+<fs:normMin>55.0</fs:normMin>
+<fs:normMax>145.0</fs:normMax>
+<fs:normRange>90.0</fs:normRange>
+</fs:region>
+<fs:region SegId="30" name="Left-vessel" hemisphere="left">
+<fs:NVoxels>88.0</fs:NVoxels>
+<fs:Volume>88.0</fs:Volume>
+<fs:normMean>67.9359</fs:normMean>
+<fs:normStdDev>12.1145</fs:normStdDev>
+<fs:normMin>44.0</fs:normMin>
+<fs:normMax>95.0</fs:normMax>
+<fs:normRange>51.0</fs:normRange>
+</fs:region>
+<fs:region SegId="31" name="Left-choroid-plexus" hemisphere="left">
+<fs:NVoxels>0.0</fs:NVoxels>
+<fs:Volume>0.0</fs:Volume>
+<fs:normMean>0.0</fs:normMean>
+<fs:normStdDev>0.0</fs:normStdDev>
+<fs:normMin>0.0</fs:normMin>
+<fs:normMax>0.0</fs:normMax>
+<fs:normRange>0.0</fs:normRange>
+</fs:region>
+<fs:region SegId="41" name="Right-Cerebral-White-Matter" hemisphere="right">
+<fs:NVoxels>194144.0</fs:NVoxels>
+<fs:Volume>194144.0</fs:Volume>
+<fs:normMean>108.6396</fs:normMean>
+<fs:normStdDev>9.4861</fs:normStdDev>
+<fs:normMin>44.0</fs:normMin>
+<fs:normMax>136.0</fs:normMax>
+<fs:normRange>92.0</fs:normRange>
+</fs:region>
+<fs:region SegId="42" name="Right-Cerebral-Cortex" hemisphere="right">
+<fs:NVoxels>235614.0</fs:NVoxels>
+<fs:Volume>235614.0</fs:Volume>
+<fs:normMean>69.8778</fs:normMean>
+<fs:normStdDev>11.0588</fs:normStdDev>
+<fs:normMin>20.0</fs:normMin>
+<fs:normMax>166.0</fs:normMax>
+<fs:normRange>146.0</fs:normRange>
+</fs:region>
+<fs:region SegId="43" name="Right-Lateral-Ventricle" hemisphere="right">
+<fs:NVoxels>10100.0</fs:NVoxels>
+<fs:Volume>10100.0</fs:Volume>
+<fs:normMean>25.8569</fs:normMean>
+<fs:normStdDev>13.265</fs:normStdDev>
+<fs:normMin>8.0</fs:normMin>
+<fs:normMax>88.0</fs:normMax>
+<fs:normRange>80.0</fs:normRange>
+</fs:region>
+<fs:region SegId="44" name="Right-Inf-Lat-Vent" hemisphere="right">
+<fs:NVoxels>985.0</fs:NVoxels>
+<fs:Volume>985.0</fs:Volume>
+<fs:normMean>41.5634</fs:normMean>
+<fs:normStdDev>18.0665</fs:normStdDev>
+<fs:normMin>8.0</fs:normMin>
+<fs:normMax>86.0</fs:normMax>
+<fs:normRange>78.0</fs:normRange>
+</fs:region>
+<fs:region SegId="46" name="Right-Cerebellum-White-Matter" hemisphere="right">
+<fs:NVoxels>12168.0</fs:NVoxels>
+<fs:Volume>12168.0</fs:Volume>
+<fs:normMean>90.2021</fs:normMean>
+<fs:normStdDev>6.8702</fs:normStdDev>
+<fs:normMin>40.0</fs:normMin>
+<fs:normMax>112.0</fs:normMax>
+<fs:normRange>72.0</fs:normRange>
+</fs:region>
+<fs:region SegId="47" name="Right-Cerebellum-Cortex" hemisphere="right">
+<fs:NVoxels>51297.0</fs:NVoxels>
+<fs:Volume>51297.0</fs:Volume>
+<fs:normMean>59.8676</fs:normMean>
+<fs:normStdDev>8.9347</fs:normStdDev>
+<fs:normMin>21.0</fs:normMin>
+<fs:normMax>107.0</fs:normMax>
+<fs:normRange>86.0</fs:normRange>
+</fs:region>
+<fs:region SegId="49" name="Right-Thalamus-Proper" hemisphere="right">
+<fs:NVoxels>5948.0</fs:NVoxels>
+<fs:Volume>5948.0</fs:Volume>
+<fs:normMean>89.88</fs:normMean>
+<fs:normStdDev>11.0477</fs:normStdDev>
+<fs:normMin>41.0</fs:normMin>
+<fs:normMax>115.0</fs:normMax>
+<fs:normRange>74.0</fs:normRange>
+</fs:region>
+<fs:region SegId="50" name="Right-Caudate" hemisphere="right">
+<fs:NVoxels>2998.0</fs:NVoxels>
+<fs:Volume>2998.0</fs:Volume>
+<fs:normMean>75.35</fs:normMean>
+<fs:normStdDev>11.1425</fs:normStdDev>
+<fs:normMin>38.0</fs:normMin>
+<fs:normMax>105.0</fs:normMax>
+<fs:normRange>67.0</fs:normRange>
+</fs:region>
+<fs:region SegId="51" name="Right-Putamen" hemisphere="right">
+<fs:NVoxels>4969.0</fs:NVoxels>
+<fs:Volume>4969.0</fs:Volume>
+<fs:normMean>86.3582</fs:normMean>
+<fs:normStdDev>7.5002</fs:normStdDev>
+<fs:normMin>56.0</fs:normMin>
+<fs:normMax>105.0</fs:normMax>
+<fs:normRange>49.0</fs:normRange>
+</fs:region>
+<fs:region SegId="52" name="Right-Pallidum" hemisphere="right">
+<fs:NVoxels>1571.0</fs:NVoxels>
+<fs:Volume>1571.0</fs:Volume>
+<fs:normMean>106.2245</fs:normMean>
+<fs:normStdDev>5.007</fs:normStdDev>
+<fs:normMin>91.0</fs:normMin>
+<fs:normMax>124.0</fs:normMax>
+<fs:normRange>33.0</fs:normRange>
+</fs:region>
+<fs:region SegId="53" name="Right-Hippocampus" hemisphere="right">
+<fs:NVoxels>3687.0</fs:NVoxels>
+<fs:Volume>3687.0</fs:Volume>
+<fs:normMean>68.2115</fs:normMean>
+<fs:normStdDev>9.6431</fs:normStdDev>
+<fs:normMin>36.0</fs:normMin>
+<fs:normMax>106.0</fs:normMax>
+<fs:normRange>70.0</fs:normRange>
+</fs:region>
+<fs:region SegId="54" name="Right-Amygdala" hemisphere="right">
+<fs:NVoxels>1345.0</fs:NVoxels>
+<fs:Volume>1345.0</fs:Volume>
+<fs:normMean>67.9444</fs:normMean>
+<fs:normStdDev>7.7289</fs:normStdDev>
+<fs:normMin>38.0</fs:normMin>
+<fs:normMax>97.0</fs:normMax>
+<fs:normRange>59.0</fs:normRange>
+</fs:region>
+<fs:region SegId="58" name="Right-Accumbens-area" hemisphere="right">
+<fs:NVoxels>661.0</fs:NVoxels>
+<fs:Volume>661.0</fs:Volume>
+<fs:normMean>77.8026</fs:normMean>
+<fs:normStdDev>9.3908</fs:normStdDev>
+<fs:normMin>42.0</fs:normMin>
+<fs:normMax>155.0</fs:normMax>
+<fs:normRange>113.0</fs:normRange>
+</fs:region>
+<fs:region SegId="60" name="Right-VentralDC" hemisphere="right">
+<fs:NVoxels>3496.0</fs:NVoxels>
+<fs:Volume>3496.0</fs:Volume>
+<fs:normMean>97.372</fs:normMean>
+<fs:normStdDev>12.6124</fs:normStdDev>
+<fs:normMin>47.0</fs:normMin>
+<fs:normMax>143.0</fs:normMax>
+<fs:normRange>96.0</fs:normRange>
+</fs:region>
+<fs:region SegId="62" name="Right-vessel" hemisphere="right">
+<fs:NVoxels>48.0</fs:NVoxels>
+<fs:Volume>48.0</fs:Volume>
+<fs:normMean>72.1277</fs:normMean>
+<fs:normStdDev>12.1273</fs:normStdDev>
+<fs:normMin>37.0</fs:normMin>
+<fs:normMax>95.0</fs:normMax>
+<fs:normRange>58.0</fs:normRange>
+</fs:region>
+<fs:region SegId="72" name="5th-Ventricle">
+<fs:NVoxels>68.0</fs:NVoxels>
+<fs:Volume>68.0</fs:Volume>
+<fs:normMean>41.5</fs:normMean>
+<fs:normStdDev>6.6021</fs:normStdDev>
+<fs:normMin>19.0</fs:normMin>
+<fs:normMax>60.0</fs:normMax>
+<fs:normRange>41.0</fs:normRange>
+</fs:region>
+<fs:region SegId="77" name="WM-hypointensities">
+<fs:NVoxels>0.0</fs:NVoxels>
+<fs:Volume>0.0</fs:Volume>
+<fs:normMean>0.0</fs:normMean>
+<fs:normStdDev>0.0</fs:normStdDev>
+<fs:normMin>0.0</fs:normMin>
+<fs:normMax>0.0</fs:normMax>
+<fs:normRange>0.0</fs:normRange>
+</fs:region>
+<fs:region SegId="78" name="Left-WM-hypointensities" hemisphere="left">
+<fs:NVoxels>961.0</fs:NVoxels>
+<fs:Volume>961.0</fs:Volume>
+<fs:normMean>79.541</fs:normMean>
+<fs:normStdDev>13.9205</fs:normStdDev>
+<fs:normMin>39.0</fs:normMin>
+<fs:normMax>109.0</fs:normMax>
+<fs:normRange>70.0</fs:normRange>
+</fs:region>
+<fs:region SegId="79" name="Right-WM-hypointensities" hemisphere="right">
+<fs:NVoxels>1036.0</fs:NVoxels>
+<fs:Volume>1036.0</fs:Volume>
+<fs:normMean>78.9651</fs:normMean>
+<fs:normStdDev>14.5976</fs:normStdDev>
+<fs:normMin>38.0</fs:normMin>
+<fs:normMax>126.0</fs:normMax>
+<fs:normRange>88.0</fs:normRange>
+</fs:region>
+<fs:region SegId="80" name="non-WM-hypointensities">
+<fs:NVoxels>0.0</fs:NVoxels>
+<fs:Volume>0.0</fs:Volume>
+<fs:normMean>0.0</fs:normMean>
+<fs:normStdDev>0.0</fs:normStdDev>
+<fs:normMin>0.0</fs:normMin>
+<fs:normMax>0.0</fs:normMax>
+<fs:normRange>0.0</fs:normRange>
+</fs:region>
+<fs:region SegId="81" name="Left-non-WM-hypointensities" hemisphere="left">
+<fs:NVoxels>25.0</fs:NVoxels>
+<fs:Volume>25.0</fs:Volume>
+<fs:normMean>64.8182</fs:normMean>
+<fs:normStdDev>11.8834</fs:normStdDev>
+<fs:normMin>46.0</fs:normMin>
+<fs:normMax>90.0</fs:normMax>
+<fs:normRange>44.0</fs:normRange>
+</fs:region>
+<fs:region SegId="82" name="Right-non-WM-hypointensities" hemisphere="right">
+<fs:NVoxels>2.0</fs:NVoxels>
+<fs:Volume>2.0</fs:Volume>
+<fs:normMean>63.6667</fs:normMean>
+<fs:normStdDev>4.1633</fs:normStdDev>
+<fs:normMin>59.0</fs:normMin>
+<fs:normMax>67.0</fs:normMax>
+<fs:normRange>8.0</fs:normRange>
+</fs:region>
+<fs:region SegId="85" name="Optic-Chiasm">
+<fs:NVoxels>131.0</fs:NVoxels>
+<fs:Volume>131.0</fs:Volume>
+<fs:normMean>88.7442</fs:normMean>
+<fs:normStdDev>22.993</fs:normStdDev>
+<fs:normMin>47.0</fs:normMin>
+<fs:normMax>137.0</fs:normMax>
+<fs:normRange>90.0</fs:normRange>
+</fs:region>
+<fs:region SegId="251" name="CC_Posterior">
+<fs:NVoxels>1021.0</fs:NVoxels>
+<fs:Volume>1021.0</fs:Volume>
+<fs:normMean>119.449</fs:normMean>
+<fs:normStdDev>9.413</fs:normStdDev>
+<fs:normMin>67.0</fs:normMin>
+<fs:normMax>135.0</fs:normMax>
+<fs:normRange>68.0</fs:normRange>
+</fs:region>
+<fs:region SegId="252" name="CC_Mid_Posterior">
+<fs:NVoxels>377.0</fs:NVoxels>
+<fs:Volume>377.0</fs:Volume>
+<fs:normMean>112.6633</fs:normMean>
+<fs:normStdDev>9.9487</fs:normStdDev>
+<fs:normMin>80.0</fs:normMin>
+<fs:normMax>125.0</fs:normMax>
+<fs:normRange>45.0</fs:normRange>
+</fs:region>
+<fs:region SegId="253" name="CC_Central">
+<fs:NVoxels>358.0</fs:NVoxels>
+<fs:Volume>358.0</fs:Volume>
+<fs:normMean>112.7218</fs:normMean>
+<fs:normStdDev>9.8386</fs:normStdDev>
+<fs:normMin>75.0</fs:normMin>
+<fs:normMax>127.0</fs:normMax>
+<fs:normRange>52.0</fs:normRange>
+</fs:region>
+<fs:region SegId="254" name="CC_Mid_Anterior">
+<fs:NVoxels>413.0</fs:NVoxels>
+<fs:Volume>413.0</fs:Volume>
+<fs:normMean>117.2487</fs:normMean>
+<fs:normStdDev>9.383</fs:normStdDev>
+<fs:normMin>81.0</fs:normMin>
+<fs:normMax>136.0</fs:normMax>
+<fs:normRange>55.0</fs:normRange>
+</fs:region>
+<fs:region SegId="255" name="CC_Anterior">
+<fs:NVoxels>923.0</fs:NVoxels>
+<fs:Volume>923.0</fs:Volume>
+<fs:normMean>117.7022</fs:normMean>
+<fs:normStdDev>10.2888</fs:normStdDev>
+<fs:normMin>60.0</fs:normMin>
+<fs:normMax>134.0</fs:normMax>
+<fs:normRange>74.0</fs:normRange>
+</fs:region>
+</fs:regions>
+</fs:ASEGRegionAnalysis>
